@@ -1,0 +1,145 @@
+/* Personal site of En-Shuo Zhang.
+   Light theme only, system fonts, no external resources. */
+
+:root {
+  --text: #111827;
+  --text-secondary: #374151;
+  --text-muted: #4b5563;
+  --border: #d1d5db;
+  --hairline: #e5e7eb;
+  --band: #f6f8fb;
+  --accent: #2563eb;
+  --tag-bg: #eef3fb;
+  --tag-text: #1d4ed8;
+  --badge-bg: #fef3c7;
+  --badge-text: #92400e;
+  --radius: 12px;
+  --pill: 999px;
+  --nav-height: 56px;
+  --font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text);
+  background: #fff;
+}
+
+h1,
+h2,
+h3,
+p,
+ul,
+ol {
+  margin: 0;
+}
+
+ul,
+ol {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: var(--accent);
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Skip link: off screen until it receives keyboard focus. */
+.skip-link {
+  position: absolute;
+  top: -48px;
+  left: 16px;
+  z-index: 20;
+  padding: 8px 14px;
+  border-radius: 8px;
+  background: var(--text);
+  color: #fff;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: 8px;
+}
+
+/* Navigation bar */
+.site-nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #fff;
+  border-bottom: 1px solid var(--hairline);
+}
+
+.site-nav__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  min-height: var(--nav-height);
+}
+
+.site-nav__brand {
+  font-weight: 700;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.site-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 20px;
+}
+
+.site-nav nav a {
+  font-size: 0.9375rem;
+  color: var(--text-muted);
+  text-decoration: none;
+}
+
+.site-nav nav a:hover {
+  color: var(--text);
+}
+
+/* Sections. The sticky bar must not cover a heading reached from the nav. */
+section {
+  scroll-margin-top: calc(var(--nav-height) + 8px);
+}
+
+.section {
+  padding: 56px 0;
+}
+
+.section--band {
+  background: var(--band);
+}
+
+/* Follows the previous section without a visual break. */
+.section--continued {
+  padding-top: 0;
+}
+
+.section h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
