@@ -9,6 +9,7 @@
   --hairline: #e5e7eb;
   --band: #f6f8fb;
   --accent: #2563eb;
+  --figure-bg: #eef3fb;
   --tag-bg: #eef3fb;
   --tag-text: #1d4ed8;
   --badge-bg: #fef3c7;
@@ -233,6 +234,13 @@ section {
   border-radius: var(--radius);
   background: #fff;
   box-shadow: 0 1px 2px rgba(16, 24, 40, 0.06), 0 4px 12px rgba(16, 24, 40, 0.07);
+}
+
+/* Each drawing is scaled to fit the figure's height and centred; the
+   background fills whatever width is left over on wide cards. */
+.card__figure {
+  overflow: hidden;
+  background: var(--figure-bg);
 }
 
 .card__figure svg {
@@ -492,6 +500,12 @@ section {
     break-inside: avoid;
     border: 1px solid var(--border);
     box-shadow: none;
+  }
+
+  /* A heading stays on the same page as what follows it. */
+  h2,
+  h3 {
+    break-after: avoid;
   }
 
   .timeline li {
