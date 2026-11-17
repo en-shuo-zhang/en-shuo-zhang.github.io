@@ -287,6 +287,30 @@ section {
   vertical-align: 1px;
 }
 
+/* Compact cards have no figure; the card itself carries the padding.
+   On a white section they need an outline to stand out. */
+.card--compact {
+  padding: 16px 18px 18px;
+  border: 1px solid var(--hairline);
+}
+
+.role {
+  margin-bottom: 14px;
+  font-size: 0.9375rem;
+  line-height: 1.55;
+  color: var(--text-secondary);
+}
+
+.role__label {
+  display: block;
+  margin-bottom: 2px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #374151;
+}
+
 /* Tags sit at the bottom of the card so rows of cards line up. */
 .tags {
   display: flex;
