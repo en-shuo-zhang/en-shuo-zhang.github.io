@@ -328,6 +328,57 @@ section {
   font-weight: 600;
 }
 
+/* Experience and education: content on the left, dates on the right. */
+.timeline li {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  column-gap: 24px;
+  padding: 14px 0;
+  border-top: 1px solid var(--hairline);
+}
+
+.timeline li:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.timeline__title {
+  grid-row: 1;
+  grid-column: 1;
+  font-weight: 700;
+}
+
+.timeline__org {
+  grid-row: 2;
+  grid-column: 1;
+  color: var(--text-secondary);
+}
+
+.timeline__dates {
+  grid-row: 1;
+  grid-column: 2;
+  font-size: 0.9375rem;
+  white-space: nowrap;
+  color: var(--text-muted);
+}
+
+.timeline__note {
+  grid-row: 3;
+  grid-column: 1;
+  margin-top: 4px;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+/* Skills */
+.skills__line + .skills__line {
+  margin-top: 4px;
+}
+
+.skills__label {
+  font-weight: 700;
+}
+
 /* Contact */
 .contact__email {
   font-size: 1.125rem;
