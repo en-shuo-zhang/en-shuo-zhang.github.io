@@ -143,3 +143,94 @@ section {
   font-weight: 700;
   letter-spacing: -0.01em;
 }
+
+/* Hero */
+.hero {
+  padding: 64px 0 56px;
+}
+
+.hero h1 {
+  font-size: clamp(2.25rem, 6vw, 3.25rem);
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  line-height: 1.1;
+}
+
+.hero__tagline {
+  margin-top: 12px;
+  font-size: 1.25rem;
+  line-height: 1.4;
+  color: var(--text-secondary);
+}
+
+.hero__tagline em {
+  font-style: normal;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.hero__degrees {
+  margin-top: 8px;
+  font-size: 0.9375rem;
+  color: var(--text-muted);
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.hero__intro {
+  max-width: 720px;
+  margin-top: 28px;
+  color: var(--text-secondary);
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 8px 18px;
+  border: 1px solid var(--border);
+  border-radius: var(--pill);
+  background: #fff;
+  color: var(--text);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  line-height: 1.4;
+  text-decoration: none;
+}
+
+.btn:hover {
+  border-color: var(--text-muted);
+}
+
+.btn--primary {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: #fff;
+}
+
+.btn--primary:hover {
+  border-color: #1d4ed8;
+  background: #1d4ed8;
+}
+
+/* Contact */
+.contact__email {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.contact__location {
+  margin-top: 4px;
+  color: var(--text-muted);
+}
+
+.contact__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 24px;
+  margin-top: 16px;
+}
