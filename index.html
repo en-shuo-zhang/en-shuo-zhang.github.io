@@ -54,6 +54,88 @@
     <section class="section section--band" id="research">
       <div class="container">
         <h2>Research</h2>
+        <div class="card-grid">
+          <article class="card" id="research-otfs">
+            <div class="card__figure">
+              <svg viewBox="0 0 160 80" role="img" aria-label="Diagram: delay-Doppler grid" preserveAspectRatio="xMidYMid slice">
+                <rect width="160" height="80" fill="#eef3fb"/>
+                <path d="M0 16H160M0 32H160M0 48H160M0 64H160M20 0V80M40 0V80M60 0V80M80 0V80M100 0V80M120 0V80M140 0V80" stroke="#d3def0" fill="none"/>
+                <g fill="#2563eb">
+                  <rect x="40" y="16" width="20" height="16" opacity=".95"/>
+                  <rect x="60" y="32" width="20" height="16" opacity=".6"/>
+                  <rect x="100" y="48" width="20" height="16" opacity=".4"/>
+                  <rect x="20" y="48" width="20" height="16" opacity=".22"/>
+                  <rect x="120" y="16" width="20" height="16" opacity=".15"/>
+                </g>
+              </svg>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Deep-learning receiver for underwater acoustic OTFS</h3>
+              <p class="card__meta">Master's thesis · Intelligent IoT Laboratory, NTOU · 2024 – present</p>
+              <p class="card__text"><span class="badge">In progress</span> Designing a hybrid CNN-Transformer receiver that detects OTFS symbols directly from the delay-Doppler grid, for underwater channels with strong Doppler and multipath. Done so far: a baseline OTFS link simulated on a public benchmark of measured underwater channels, verified in Python and MATLAB. Next: the learned receiver, then tests across five sites from lab tanks to a 50 m pool.</p>
+              <ul class="tags">
+                <li>OTFS</li>
+                <li>PyTorch</li>
+                <li>MATLAB</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card" id="research-acoustic">
+            <div class="card__figure">
+              <svg viewBox="0 0 160 80" role="img" aria-label="Diagram: multipath delay profile" preserveAspectRatio="xMidYMid slice">
+                <rect width="160" height="80" fill="#eef3fb"/>
+                <path d="M12 66H150M12 66V10" stroke="#d3def0" fill="none"/>
+                <path d="M30 66V18M52 66V36M70 66V45M94 66V53M116 66V58M136 66V61" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+                <g fill="#2563eb">
+                  <circle cx="30" cy="18" r="3.5"/>
+                  <circle cx="52" cy="36" r="3.5"/>
+                  <circle cx="70" cy="45" r="3.5"/>
+                  <circle cx="94" cy="53" r="3.5"/>
+                  <circle cx="116" cy="58" r="3.5"/>
+                  <circle cx="136" cy="61" r="3.5"/>
+                </g>
+              </svg>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Underwater acoustic channel measurements</h3>
+              <p class="card__meta">Intelligent IoT Laboratory, NTOU · 2023 – 2024</p>
+              <p class="card__text">Compared OFDM and OCDM multicarrier schemes for spectral efficiency in high-Doppler channels, and ran acoustic field experiments in swimming pools and fish ponds to characterize multipath delay profiles for underwater links.</p>
+              <ul class="tags">
+                <li>OFDM</li>
+                <li>OCDM</li>
+                <li>Field experiments</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card" id="research-lifi">
+            <div class="card__figure">
+              <svg viewBox="0 0 160 80" role="img" aria-label="Diagram: light cone from an LED to a receiver" preserveAspectRatio="xMidYMid slice">
+                <rect width="160" height="80" fill="#eef3fb"/>
+                <path d="M80 12 L34 70 H126 Z" fill="#2563eb" opacity=".18"/>
+                <path d="M80 12 L58 70 H102 Z" fill="#2563eb" opacity=".25"/>
+                <circle cx="80" cy="12" r="5" fill="#2563eb"/>
+                <rect x="68" y="67" width="24" height="5" rx="1.5" fill="#2563eb" opacity=".8"/>
+                <path d="M20 72H140" stroke="#d3def0" fill="none"/>
+              </svg>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">LiFi channel characterization</h3>
+              <p class="card__meta">Best Information Transmission Laboratory, NTOU · 2021 – 2023</p>
+              <p class="card__text">Measured and modeled optical path loss for visible light communication links, and analyzed Huffman coding for compressing source data before transmission.</p>
+              <ul class="tags">
+                <li>VLC</li>
+                <li>Channel measurement</li>
+                <li>Python</li>
+              </ul>
+              <p class="card__links">
+                <a href="https://github.com/en-shuo-zhang/Li-Fi" aria-label="Code for the LiFi project on GitHub">Code</a>
+                <a href="https://github.com/Williamochi/project" aria-label="Demo video of the LiFi project on GitHub">Demo video</a>
+              </p>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
